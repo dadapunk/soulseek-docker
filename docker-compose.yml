@@ -10,8 +10,8 @@ services:
     ports:
       - 6080:6080
     volumes:
-      - appdata:/data/.SoulseekQt
-      - downloads:/data/Soulseek Downloads
+      - /opt/appdata/soulseek:/data/.SoulseekQt
+      - /mnt/unionfs/musica/:/data/Soulseek Downloads
       - logs:/data/Soulseek Chat Logs
 volumes:
   appdata:
